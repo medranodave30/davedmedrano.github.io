@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BSIS Portfolio | Graduating Student</title>
+  <meta name="description" content="Professional portfolio of a Bachelor of Science in Information Systems graduating student." />
+  <link rel="stylesheet" href="dave.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/profile-placeholder.png" />
+</head>
+<body>
+  <!-- Particle Background Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button id="backToTop" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- Left Sidebar Navbar -->
+  <header class="sidebar" id="navbar">
+    <div class="sidebar-inner">
+      <a href="#home" class="logo">My<span>Portfolio</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></a>
+        <a href="#about" class="nav-link"><span class="nav-icon">👤</span><span class="nav-label">About</span></a>
+        <a href="#skills" class="nav-link"><span class="nav-icon">🛠️</span><span class="nav-label">Skills</span></a>
+        <a href="#projects" class="nav-link"><span class="nav-icon">📂</span><span class="nav-label">Projects</span></a>
+        <a href="#achievements" class="nav-link"><span class="nav-icon">🏅</span><span class="nav-label">Achievements</span></a>
+        <a href="#experience" class="nav-link"><span class="nav-icon">💼</span><span class="nav-label">Experience</span></a>
+        <a href="#contact" class="nav-link"><span class="nav-icon">✉️</span><span class="nav-label">Contact</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-with-sidebar">
+    <!-- Hero / Home Section -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-content" data-reveal>
+          <p class="hero-kicker">Bachelor of Science in Information Systems</p>
+          <h1 class="hero-title">Hi, I'm <span class="accent">Dave D. Medrano</span></h1>
+          <h2 class="hero-subtitle">
+            <span class="typing" id="typing"></span>
+            <span class="typing-cursor">|</span>
+          </h2>
+          <p class="hero-text">
+            A graduating Information Systems student passionate about bridging business needs with modern technology solutions through systems analysis, web development, and data-driven decision making.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Course</span>
+              <span class="meta-value">B.S. in Information Systems</span>
+            </div>
+            <div>
+              <span class="meta-label">Location</span>
+              <span class="meta-value">Purok 5, Salvacion, Panabo City 8105, Davao Del Norte, Philippines</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media" data-reveal>
+          <div class="hero-card">
+            <div class="hero-avatar">
+              <img src="img/pfp.jpg" />
+            </div>
+            <div class="hero-card-body">
+              <h3>Dave D. Medrano</h3>
+              <p>Aspiring Systems Analyst &amp; Data Encoder</p>
+              <ul class="hero-stats">
+                <li>
+                   <span class="label">Capstone</span>
+                    <span class="value">
+                      <a href="https://skillsync-online.online" target="_blank" rel="noopener noreferrer">SkillSync</a>
+                    </span>
+                </li>
+                <li>
+                  <span class="label">Focus</span>
+                  <span class="value">Encoder</span>
+                </li>
+                <li>
+                  <span class="label">Status</span>
+                  <span class="value">Graduating 2026</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2>About Me</h2>
+          <p>A quick overview of my journey as a BSIS student.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text card" data-reveal>
+            <h3>Personal Background</h3>
+            <p style="text-align: justify;">
+              I am experienced in handling multiple roles within a project environment, including serving as a documentarian, project manager, and encoder. As a documentarian, I ensure accurate and well-organized preparation of project reports, technical documents, and records that support clear communication and proper documentation of all processes. In my role as a project manager, I coordinate tasks, monitor progress, and guide the team to ensure that project goals are achieved efficiently and within deadlines while maintaining quality standards. As an encoder, I handle data entry and information management with accuracy and attention to detail, ensuring that all records are properly encoded, organized, and maintained for reliable use throughout the project lifecycle.
+            </p>
+            <p style="text-align: justify;">
+              I enjoy working at the intersection of people, processes, and technology—analyzing requirements, designing
+              intuitive user experiences, and implementing efficient, scalable solutions.
+            </p>
+          </div>
+          <div class="about-highlights" data-reveal>
+            <div class="card">
+              <h3>Skills Summary</h3>
+              <ul class="tag-list">
+                <li>Systems Analysis</li>
+                <li>Web Development</li>
+                <li>Research &amp; Documentation</li>
+                <li>Technical Support</li>
+              </ul>
+            </div>
+            <div class="card timeline-card">
+              <h3>Academic Journey</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-year">2022 - 2023</div>
+                  <div class="timeline-content">
+                    <ul>
+                      <li>Started BSIS program and wrote my first "Hello World" in Java.</li>
+                      <li>Built BMI and grade calculator systems in Java using OOP principles.</li>
+                      <li>CRUD development for ComProg 1.</li>
+                      <li>Studied fundamentals of ISDP/ISDTP research and documentation.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2023 - 2024</div>
+                  <div class="timeline-content">
+                    <ul>
+                      <li>Conducted a small case study in Professional Issues in Information Systems.</li>
+                      <li>Completed a quantitative research project and academic poster presentation.</li>
+                      <li>Developed a locally hosted Record Management System for Systems Analysis and Design research.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2024 - 2025</div>
+                  <div class="timeline-content">
+                    <ul>
+                      <li>Completed Technoprenuership by developing Maguayan Web Application.</li>
+                      <li>Participated in project exhibits presenting entrepreneurial solutions.</li>
+                      <li>Partially developed SkillSync as a capstone project.</li>
+                      <li>Successfully defended the capstone title and outline.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2025 - 2026</div>
+                  <div class="timeline-content">
+                    <ul>
+                      <li>Attended workshops on data analytics and business intelligence.</li>
+                      <li>Deployed the SkillSync capstone system.</li>
+                      <li>Defended pre-deployment and final capstone project.</li>
+                      <li>Presented and defended the final capstone defense.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2>Skills</h2>
+          <p>Technical and soft skills I've developed throughout my BSIS journey.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="card" data-reveal>
+            <h3>Technical Skills</h3>
+            <ul class="skill-list">
+              <li>Basic computer and laptop repair</li>
+              <li>Basic troubleshooting and technical support</li>
+            </ul>
+          </div>
+          <div class="card" data-reveal>
+            <h3>Programming &amp; Tools</h3>
+            <div class="skills-columns">
+              <div>
+                <h4>Frontend</h4>
+                <ul class="tag-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <h4>Backend</h4>
+                <ul class="tag-list">
+                  <li>PHP</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Databases</h4>
+                <ul class="tag-list">
+                  <li>MySQL</li>
+                </ul>
+                <h4>AI &amp; Tools</h4>
+                <ul class="tag-list">
+                  <li>VS Code</li>
+                  <li>XAMPP</li>
+                  <li>Git &amp; GitHub</li>
+                  <li>Figma</li>
+                  <li>Claude</li>
+                  <li>OpenAI ChatGPT</li>
+                  <li>Gemini</li>
+                  <li>Word</li>
+                  <li>Excel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-reveal>
+            <h3>Soft Skills</h3>
+            <ul class="skill-list">
+              <li>Problem-solving and analytical thinking</li>
+              <li>Critical thinking and attention to detail</li>
+              <li>Strong work ethic and professionalism</li>
+              <li>Time management and task prioritization</li>
+              <li>Collaboration and communication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2>Projects</h2>
+          <p>Selected academic and personal projects that showcase my skills.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="card project-card" data-reveal>
+            <div class="project-image-wrap">
+              <img src="img/3.png" alt="SkillSync capstone system placeholder" />
+            </div>
+            <div class="project-content">
+              <h3>SkillSync - Capstone System</h3>
+              <p>
+                A web-based platform designed to register, submit requirements, and employment opportunities by
+                mapping competencies to industry requirements.
+              </p>
+              <p class="project-tech">Technologies: Laravel, React, MySQL</p>
+            </div>
+          </article>
+
+          <article class="card project-card" data-reveal>
+            <div class="project-image-wrap">
+              <img src="img/4.png" alt="Record management system placeholder" />
+            </div>
+            <div class="project-content">
+              <h3>VIP Record Management System</h3>
+              <p>
+                A locally hosted web-application information system for managing records for payment with analytical dashboards and downloadable report.
+              </p>
+              <p class="project-tech">Technologies: MySQL, HTML, CSS, JavaScript, Django</p>
+            </div>
+          </article>
+
+          <article class="card project-card" data-reveal>
+            <div class="project-image-wrap">
+              <img src="img/5.png" />
+            </div>
+            <div class="project-content">
+              <h3>Maguayan</h3>
+              <p>
+                My first web project in Blue Economy-focused Schedule and Resource Management System designed to streamline fish harvesting schedules, optimize resource allocation, and efficiently manage fisheries inventory for sustainable and productive operations.
+              </p>
+              <p class="project-tech">Technologies: PHP, MYSQL, HTML, CSS, Javascript</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certificates Section -->
+    <section id="achievements" class="section alt">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2>Achievements &amp; Certificates</h2>
+          <p>Recognitions and certifications earned during my academic journey.</p>
+        </div>
+        <div class="achievements-grid">
+          <div class="card" data-reveal>
+            <h3>Academic &amp; Project Milestones</h3>
+            <ul class="achievement-list">
+              <li>Maguayan startup milestone recognition in Entrepreneurship.</li>
+              <li>Project Exhibit participant showcasing innovative solutions.</li>
+              <li>Capstone project "SkillSync" successfully deployed and defended.</li>
+              <li>Completed multiple research presentations and poster sessions.</li>
+              <li>Dean's Lister Rank #156 A.Y 2024-2025</li>
+            </ul>
+          </div>
+          <div class="card" data-reveal>
+            <h3>Certificates</h3>
+            <ul class="achievement-list">
+              <li>Certificate of Participation - Patent Filing.</li>
+              <li>Certificate of Completion - OJT Internship.</li>
+              <li>Certificate of Completion - PSTAC Capstone Project Sponsor</li>
+              <li>Various webinars and short courses related to IS and technology.</li>
+            </ul>
+            <div class="certificate-gallery">
+              <!-- PDFs or images -->
+              <img src="img/6.png" alt="Python Essentials 1 Certificate" />
+              <img src="img/7.png" alt="Python Essentials 2 Certificate" />
+
+              <!-- Image-only certificates: open in preview modal -->
+              <img src="img/1.png" alt="Patent Filing Certificate" class="cert-preview" onclick="openPreview(this.src)" />
+              <img src="img/2.png" alt="OJT Completion" class="cert-preview" onclick="openPreview(this.src)" />
+              <img src="img/8.jpg" alt="OJT Completion" class="cert-preview" onclick="openPreview(this.src)" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Internship Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2>Experience &amp; Internship</h2>
+          <p>Hands-on experience gained through on-the-job training.</p>
+        </div>
+        <div class="experience-grid">
+          <div class="card" data-reveal>
+            <h3>OJT Internship Experience</h3>
+            <p>
+              My internship experience at the DNSC Guidance Office was a meaningful and enriching journey that allowed me to develop both my professional and personal skills.
+            </p>
+            <p>
+             Throughout my training, I was given the opportunity to perform various administrative and office-related tasks such as encoding student information, preparing documents, assisting during examinations, creating informational materials, and supporting different office programs and activities.
+            </p>
+            <p>
+             These responsibilities helped me improve my organizational, communication, and technical skills while gaining a better understanding of how a guidance office operates in serving students and stakeholders.
+            </p>
+            <p>
+              This experience also taught me the importance of professionalism, responsibility, teamwork, and adaptability in the workplace. By working closely with the guidance personnel, I learned how dedication and efficiency contribute to providing quality services to students. The internship enhanced my confidence, strengthened my work ethic, and allowed me to apply the knowledge and skills I acquired from my academic studies in a real-world setting. I am grateful to the DNSC Guidance Office for the guidance, support, and valuable learning opportunities that have contributed to my growth and preparation for my future career.
+            </p>
+            <ul class="skill-list">
+              <li>Encoding of student personal information.</li>
+              <li>Assisting of basic hardware and software troubleshooting.</li>
+              <li>Creating of brand packaging for livelihood program.</li>
+            </ul>
+          </div>
+          <div class="card" data-reveal>
+            <h3>Documentation &amp; Photos</h3>
+            <div class="photo-grid">
+              <figure>
+                <img src="img/9.jpg" alt="Internship documentation placeholder 1" />
+                <figcaption>OJT Tasks.</figcaption>
+              </figure>
+              <figure>
+                <img src="img/d1.jpg" alt="Internship documentation placeholder 2" />
+                <figcaption>OJT Tasks.</figcaption>
+              </figure>
+              <figure>
+                <img src="img/d2.jpg" alt="Internship documentation placeholder 3" />
+                <figcaption>OJT Tasks.</figcaption>
+              </figure>
+               <figure>
+                <img src="img/d3.jpg" alt="Internship documentation placeholder 4" />
+                <figcaption>OJT Tasks.</figcaption>
+              </figure>
+               <figure>
+                <img src="img/d4.jpg" alt="Internship documentation placeholder 5" />
+                <figcaption>OJT Tasks.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div class="section-header" data-reveal>
+          <h2>Contact</h2>
+          <p>Interested in working together or learning more? Let's connect.</p>
+        </div>
+        <div class="contact-content">
+          <div class="card contact-info" data-reveal>
+            <h3>Get in Touch</h3>
+            <p>
+              I’m currently seeking entry-level positions and collaborative projects in information systems, web development, and IT solutions.
+            </p>
+            <ul class="contact-list">
+              <li><span class="label">Email: </span> davemedrano123@gmail.com</li>
+              <li><span class="label">Phone:</span> <br>+63 992 654 1534</li>
+            </ul>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/medrano-dave-806571310/" aria-label="LinkedIn" class="icon-link">in</a>
+              <a href="https://github.com/medranodave30" aria-label="GitHub" class="icon-link">GH</a>
+              <a href="#" aria-label="Portfolio" class="icon-link">🌐</a>
+            </div>
+          </div>
+          <form id="contactForm" class="card contact-form" novalidate data-reveal>
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+              <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+              <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+              <span class="error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn primary full-width">Submit</button>
+            <p class="form-success" id="formSuccess"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Certificate Preview Modal -->
+  <div id="certModal" class="cert-modal" onclick="closePreview()">
+    <div class="cert-modal-content" onclick="event.stopPropagation()">
+      <button class="cert-modal-close" onclick="closePreview()" aria-label="Close preview">&times;</button>
+      <img id="certModalImg" src="" alt="Certificate full preview" />
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dave D. Medrano · Bachelor of Science in Information Systems Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
